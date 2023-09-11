@@ -74,8 +74,8 @@
         }
 
         &__mobile{
-            width: 70px;
-            height: 70px;
+            width: 50px;
+            height: 50px;
             border: 1px solid #000;
             display: none;
         }
@@ -388,7 +388,6 @@ text-transform: capitalize;
             display: none;
         }
 
-
         .header__info-block-left{
             display: none;
         }
@@ -498,5 +497,8 @@ text-transform: capitalize;
     @media (max-width: 385px) {
         .header__body-left{
             width: 200px;
+        }
+        .header__info-block-right{
+            width: 300px;
         }
     }
