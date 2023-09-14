@@ -14,6 +14,7 @@
         width: 100%;
         background: var(--Background, #2B2B2B);
         height: 100vh;
+        position: relative;
 
         &__body{
             padding-top: 10px;
@@ -39,6 +40,7 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            z-index: 1;
         }
         &__body-right-navigate{
             padding-right: 30px;
@@ -56,6 +58,7 @@
             font-style: normal;
             font-weight: 600;
             line-height: 140%; /* 22.4px */
+            cursor: pointer;
         }
         &__body-right-btn{
             width: 110px;
@@ -77,11 +80,75 @@
 
         /* -------HEADER TOP MOBILE---------------- */
         &__mobile{
+            position: relative;
             width: 50px;
             height: 50px;
-            border: 1px solid #000;
             display: none;
         }
+
+        &__mobile-line{
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            background-color: #FFF;
+            top: 45%;
+            transition: 0.3s;
+        }
+
+        &__mobile-line::after{
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 4px;
+            background-color: #FFF;
+            top: 15px;
+        }
+
+        &__mobile-line::before{
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 4px;
+            background-color: #FFF;
+            top: -15px;
+        }
+        
+
+        &__input[type="checkbox"]:checked ~ .header__label .header__mobile .header__mobile-line{
+            transform: rotate(45deg);
+            background-color: #f42323;
+        }
+
+        &__input[type="checkbox"]:checked ~ .header__label .header__mobile .header__mobile-line::after{
+            background-color: #f42323;
+            opacity: 0;
+        }
+
+        &__input[type="checkbox"]:checked ~ .header__label .header__mobile .header__mobile-line::before{
+            background-color: #f42323;
+            transform: rotate(90deg) translateX(15px);
+
+        }
+
+        &__input[type="checkbox"]:checked ~ .header__body-right{
+            position: absolute;
+            width: 130px;
+            height: 300px;
+            right: 10%;
+            border: 1px solid #000;
+            top:  20px;
+            background-color: #A259FF;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 25px;
+        }
+
+        .header__input{
+            display: none;
+        }
+
 
 
         /* --------------HEADER INFO BLOCK-------------------- */
@@ -232,6 +299,7 @@ text-transform: capitalize;
 
 /* Стилі для середніх екранів (дисплей максимум 991рх) */
     @media (max-width: 996px) { 
+
         .header__info-block{
             padding: 0 10px;
         }
@@ -310,6 +378,7 @@ text-transform: capitalize;
             display: flex;
             flex-direction: column;
         }
+
 
         .header__info-block-right{
             width: 300px;
@@ -430,6 +499,44 @@ text-transform: capitalize;
         .header__body-right{
             display: none;
         }
+        .header__body-right-navigate{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 130px;
+            padding-top: 50px;
+            padding-left: 30px;
+        }
+
+        .header__body-right-navigate-link{
+            transition: 0.3s;
+        }
+
+        .header__body-right-navigate-link:hover{
+            color: #2B2B2B;
+        }
+        .header__body-right-navigate-link:nth-child(2){
+            padding-top: 30px;
+        }
+
+        .header__body-right-navigate-link:nth-child(3){
+            padding-top: 30px;
+        }
+
+        .header__body-right-btn{
+            background-color: #000;
+            cursor: pointer;
+            border: 3px solid #fff;
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+
+        .header__body-right-btn:hover{
+            background-color: #f80a0aae;
+            color: #000;
+        }
+
 
         .header__info-block-left{
             display: none;
