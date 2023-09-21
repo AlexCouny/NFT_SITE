@@ -440,6 +440,50 @@ body {
   padding-top: 10px;
 }
 
+/* ----------------------ANIMAL WORLD-------------------- */
+.world-header {
+  width: 100%;
+  height: 100vh;
+}
+
+.world__title {
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6117647059);
+  color: #fff;
+  text-align: center;
+  font-family: Space Mono;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 160%; /* 35.2px */
+  text-transform: capitalize;
+  padding-top: 180px;
+  animation: title 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+}
+
+@keyframes title {
+  0% {
+    opacity: 0;
+    font-size: 10px;
+  }
+  100% {
+    opacity: 1;
+    font-size: 70px;
+  }
+}
+.images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1400px;
+  margin: 50px auto;
+}
+.images__anim {
+  width: 300px;
+  border-radius: 16px;
+  height: 300px;
+}
+
 /* Стилі для великих екранів (дисплей максимум 1199рх) */
 @media (max-width: 1199px) {
   .header__body {
