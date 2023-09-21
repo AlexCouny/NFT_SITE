@@ -86,6 +86,7 @@ body {
   width: 50px;
   height: 50px;
   display: none;
+  cursor: pointer;
 }
 .header__mobile-line {
   position: absolute;
@@ -425,6 +426,10 @@ body {
   font-weight: 700;
   line-height: 160%; /* 35.2px */
   text-transform: capitalize;
+  transition: 0.3s;
+}
+.section-2__images-block-small-more:hover {
+  transform: scale(1.1);
 }
 .section-2__images-block-name {
   color: #FFF;
@@ -486,6 +491,26 @@ body {
 
 /* Стилі для великих екранів (дисплей максимум 1199рх) */
 @media (max-width: 1199px) {
+  .section-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section-2__txt {
+    padding-left: 40px;
+    text-align: center;
+  }
+  .section-2__images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+  }
+  .section-2__images-block:nth-child(3) {
+    display: none;
+  }
   .header__body {
     padding: 7px 20px;
   }
@@ -563,6 +588,13 @@ body {
     line-height: 160%; /* 38.384px */
     text-transform: capitalize;
   }
+  .section-2__images {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    max-width: 700px;
+  }
 }
 /* Стилі для малих екранів (дисплей максимум 767рх) */
 @media (max-width: 777px) {
@@ -634,6 +666,15 @@ body {
     font-weight: 400;
     line-height: 160%; /* 38.384px */
     text-transform: capitalize;
+  }
+  .section-2__images {
+    width: 320px;
+  }
+  .section-2__images-block:nth-child(2) {
+    display: none;
+  }
+  .section-2__images-block {
+    margin: 0 auto;
   }
 }
 @media (max-width: 680px) {
@@ -810,6 +851,23 @@ body {
     font-weight: 400;
     line-height: 140%; /* 22.4px */
   }
+  .section-2__txt-title {
+    color: var(--White, #FFF);
+    font-family: Work Sans;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 45.6px */
+    text-transform: capitalize;
+  }
+  .section-2__txt-descr {
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 35.2px */
+    text-transform: capitalize;
+  }
 }
 @media (max-width: 385px) {
   .header__body-left {
@@ -826,5 +884,27 @@ body {
   }
   .header__info-block-left-ratings {
     margin-top: 15px;
+  }
+  .section-2__txt {
+    margin: 0 auto;
+    width: 340px;
+  }
+  .section-2__txt-descr {
+    transform: translateX(-20px);
+  }
+  .section-2__txt-title {
+    transform: translateX(-10px);
+  }
+  .section-2__images-block-main-img {
+    width: 320px;
+  }
+  .section-2__images-block-small {
+    padding: 3px 10px;
+  }
+  .section-2__images-block-small-img {
+    width: 90px;
+  }
+  .section-2__images-block-small-more {
+    padding: 27px 10px;
   }
 }/*# sourceMappingURL=style.css.map */
