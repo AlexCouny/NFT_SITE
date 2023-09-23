@@ -1114,6 +1114,7 @@ body {
   .section-2__txt {
     margin: 0 auto;
     width: 340px;
+    transform: translateX(-10px);
   }
   .section-2__txt-descr {
     transform: translateX(-20px);
