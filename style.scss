@@ -402,6 +402,7 @@ cursor: pointer;
         flex-direction: column;
         align-items: start;
         padding-bottom: 30px;
+        overflow: hidden;
 
         &__txt{
             padding-left: 185px;
@@ -434,6 +435,7 @@ text-transform: capitalize;
             justify-content: space-between;
             align-items: center;
             padding-top: 50px;
+            overflow: hidden;
             
         }
 
@@ -482,6 +484,10 @@ padding-top: 10px;
     &__images-block-avatar{
         padding-top: 10px;
     }
+    }
+
+    .button-767px{
+        display: none;
     }
 
     /* ----------------------ANIMAL WORLD-------------------- */
@@ -658,8 +664,6 @@ line-height: 140%; /* 22.4px */
         display: none;
     }
 
-
-
     /* Стилі для великих екранів (дисплей максимум 1199рх) */
     @media (max-width: 1199px) { 
         .section-2{
@@ -775,6 +779,10 @@ text-transform: capitalize;
             flex-direction: row;
             align-items: center;
             max-width: 700px;
+        }
+        .images__anim{
+            width: 200px;
+            height: 200px;
         }
 
         .section-3{
@@ -921,15 +929,61 @@ text-transform: capitalize;
         
 
         .section-2__images{
-            width: 320px;
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            overflow: hidden;
         }
         .section-2__images-block:nth-child(2){
             display: none;
         }
         .section-2__images-block{
             margin: 0 auto;
+            padding-top: 10px;
+        }
+        .section-2__images-block-3{
+            display: none;
+        }
+        /* BUTTON */
+        .button-767px{
+            display: block;
+        }
+        .button-767px__input{
+            display: none;
+        }
+        .footer-button{
+            margin-top: 7px;
+            cursor: pointer;
+            padding: 8px 90px;
+            border-radius: 20px;
+            background-color: #A259FF;
+            color: var(--White, #FFF);
+font-family: Space Mono;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 140%; /* 39.2px */
+text-transform: capitalize;
+text-align: center;
         }
 
+        .cards-767px{
+            display: none;
+            transition: 0.7s;
+        }
+
+        .button-767px__input[type="checkbox"]:checked ~ .cards-767px{
+            display: block;
+            transform: translateY(10px);
+            padding-bottom: 20px;
+        }
+
+
+        .section-3{
+            padding-bottom: 20px;
+        }
         .section-3__block-creator{
             width: 310px;
         }
@@ -991,6 +1045,10 @@ line-height: 140%; /* 22.4px */
         .header__info-block-right-image{
             width: 290px;
             height: 205px;
+        }
+
+        .images__anim:nth-child(3){
+            display: none;
         }
     }
 /* Стилі для дуже малих екранів (дисплей максимум 575рх) */
@@ -1164,6 +1222,13 @@ text-transform: capitalize;
 
         .section-3__top-btn{
             display: none;
+        }
+    }
+
+    @media (max-width: 481px) {
+        .images__anim{
+            width: 150px;
+            height: 150px;
         }
     }
 
