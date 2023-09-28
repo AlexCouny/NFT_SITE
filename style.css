@@ -508,6 +508,20 @@ body {
   height: 300px;
 }
 
+.section-3__top-btn:hover .section-3__rocket-img {
+  transform: rotateY(-360deg);
+}
+
+.section-3__rocket-img {
+  transition: 0.3s;
+}
+
+.section-3__top-btn:hover {
+  border: 2px solid var(--Call-to-Action, #000);
+  height: 40px;
+  width: 160px;
+}
+
 .section-3 {
   max-width: 1150px;
   margin: 0 auto;
@@ -552,6 +566,8 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: 140%; /* 22.4px */
+  cursor: pointer;
+  transition: 0.3s;
 }
 .section-3__blocks {
   padding-top: 63px;
@@ -581,6 +597,10 @@ body {
 .section-3__block-creator:hover {
   transform: scale(1.1);
   filter: drop-shadow(0px 0px 10px rgba(241, 15, 15, 0.8666666667));
+}
+.section-3__block-creator:hover .section-3__creator-number {
+  background-color: #f4ca23;
+  color: #000;
 }
 .section-3__creator-number {
   position: absolute;
@@ -625,6 +645,40 @@ body {
 
 .mob-section-3__blocks {
   display: none;
+}
+
+.section-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  max-width: 1150px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.section-4__title {
+  color: var(--White, #FFF);
+  font-family: Work Sans;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 45.6px */
+  text-transform: capitalize;
+}
+.section-4__box-1-block {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+  background: #3B3B3B;
+}
+.section-4__box-1-block-images {
+  background-image: url(./images-4/first.png);
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 /* Стилі для великих екранів (дисплей максимум 1199рх) */
@@ -851,6 +905,11 @@ body {
     font-weight: 600;
     line-height: 140%; /* 22.4px */
     margin-top: 10px;
+  }
+  .fullskrin__start {
+    max-width: 450px;
+    transform: translateY(-40px);
+    margin-left: -60px;
   }
   .header__info-block-left-ratings {
     width: 260px;
