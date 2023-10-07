@@ -1403,12 +1403,12 @@ body {
   }
   .header__mob-info-block-right {
     border-radius: 20px 20px;
-    width: 300px;
+    width: 270px;
     background: var(--Background---Secondary, #3B3B3B);
     margin-top: 10px;
   }
   .header__info-block-right-image {
-    width: 300px;
+    width: 270px;
   }
   .header__info-block-right-name {
     color: #FFF;
@@ -1580,10 +1580,10 @@ body {
     width: 200px;
   }
   .header__mob-info-block-right {
-    width: 300px;
+    width: 270px;
   }
   .header__info-block-right-image {
-    width: 300px;
+    width: 270px;
   }
   .header__info-block-left-btn {
     margin-top: 20px;
@@ -1640,5 +1640,20 @@ body {
   .section-5__box-block {
     width: 310px;
     transform: translateX(-10px);
+  }
+}
+@media (max-width: 350px) {
+  .section-2 {
+    transform: translateX(-7px);
+  }
+  .section-3__block-creator:hover {
+    transform: scale(1.05);
+  }
+  .section-5__box-block {
+    transform: translateX(-13px);
+  }
+  .section-5__top-btn {
+    margin-left: 5px;
+    padding: 0 25px;
   }
 }/*# sourceMappingURL=style.css.map */
