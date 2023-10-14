@@ -8,6 +8,7 @@
     list-style: none;
     }
 
+    
 
     body{
         background: var(--Background, #2B2B2B);
@@ -887,6 +888,217 @@ line-height: 140%; /* 22.4px */
     }
 
 
+    .section-6{
+        width: 100%;
+        background-image: url(./images/mushrooms-2798150_1920.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        padding: 130px 0px;
+
+        &__left{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: start;
+            max-width: 750px;
+        }
+
+        &__avatar{
+            width: 150px;
+            border-radius: 50px;
+            background: #3B3B3B;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            justify-content: space-around;
+        }
+        &__avatar-name{
+            color: #FFF;
+            font-family: Work Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%; /* 22.4px */
+        }
+        &__avatar-img{
+            width: 20px;
+        }
+        &__title{
+            margin: 20px 0;
+            color: #FFF;
+            font-family: Work Sans;
+            font-size: 51px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 110%; /* 56.1px */
+            text-transform: capitalize;
+        }
+        &__btn{
+            border-radius: 20px;
+background: var(--Text, #FFF);
+display: flex;
+height: 60px;
+padding: 10px 30px;
+justify-content: center;
+align-items: center;
+color: var(--Background, #2B2B2B);
+text-align: center;
+font-family: Work Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 140%; /* 22.4px */
+        }
+
+        &__right{
+            display: flex;
+width: 295px;
+padding: 30px;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+border-radius: 20px;
+background: rgba(59, 59, 59, 0.50);
+backdrop-filter: blur(5px);
+        }
+
+        &__info{
+            gap: 30px;
+            max-width: 1150px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: end;
+        }
+    }
+
+    .section-6-mob{
+        width: 100%;
+        background-image: url(./images/mushrooms-2798150_1920.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        padding: 100px 0px;
+        display: none;
+        
+        
+        &__info{
+            max-width: 340px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: start;
+            align-content: center;
+        }
+
+        &__title{
+            margin: 20px 0px;
+            color: #FFF;
+            font-family: Work Sans;
+            font-size: 51px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 110%; /* 56.1px */
+            text-transform: capitalize;
+        }
+        &__btn{
+            border-radius: 20px;
+            background: var(--Text, #FFF);
+            display: flex;
+            height: 60px;
+            padding: 10px 30px;
+            justify-content: center;
+            align-items: center;
+            color: var(--Background, #2B2B2B);
+            text-align: center;
+            font-family: Work Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 140%; /* 22.4px */
+            margin-top: 20px;
+        }
+    } 
+
+    .section-7{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        max-width: 1150px;
+        margin: 0 auto;
+        padding-top: 80px;
+
+
+        &__box{
+            padding: 45px 20px;
+            gap: 48px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        &__top{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: start;
+        }
+        &__title{
+            color: var(--White, #FFF);
+            font-family: Work Sans;
+            font-size: 38px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%; /* 45.6px */
+            text-transform: capitalize;
+        }
+        &__descr{
+            color: var(--White, #FFF);
+            font-family: Work Sans;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%; /* 35.2px */
+            text-transform: capitalize;
+        }
+        &__card{
+            display: flex;
+            width: 330px;
+            padding: 10px 30px 30px 30px;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            border-radius: 20px;
+background: var(--Background---Secondary, #3B3B3B);
+        }
+        &__card-icon{
+            width: 250px;
+        }
+        &__card-title{
+            color: #FFF;
+            text-align: center;
+            font-family: Work Sans;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 140%; /* 30.8px */
+            text-transform: capitalize;
+        }
+        &__card-descr{
+            color: var(--White, #FFF);
+            text-align: center;
+            font-family: Work Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%; /* 22.4px */
+        }
+    }
+
     /* Стилі для великих екранів (дисплей максимум 1199рх) */
     @media (max-width: 1199px) { 
         .section-2{
@@ -941,7 +1153,9 @@ line-height: 140%; /* 22.4px */
         .section-5__box-block-img{
             width: 315px;
         }
+
     }
+
 
 /* Стилі для середніх екранів (дисплей максимум 991рх) */
     @media (max-width: 996px) { 
@@ -1103,15 +1317,13 @@ line-height: 140%; /* 22.4px */
     }
 
     @media (max-width: 955px) {
-        .section-5__box-block:nth-child(3){
-            display: none;
-        }
+
 
         .section-5__box-block{
-            width: 315px;
+            width: 240px;
         }
         .section-5__box-block-img{
-            width: 315px;
+            width: 240px;
         }
     }
 
@@ -1284,6 +1496,23 @@ font-weight: 400;
 line-height: 140%; /* 22.4px */
     }
 
+    .section-5__box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+    .section-5__box-block{
+        width: 350px;
+    }
+    .section-5__box-block-img{
+        width: 350px;
+    }
+
+    .section-7__box{
+        max-width: 400px;
+    }
 }
 
 
@@ -1326,12 +1555,6 @@ line-height: 140%; /* 22.4px */
             display: none;
         }
 
-        .section-5__box-block{
-            width: 280px;
-        }
-        .section-5__box-block-img{
-            width: 280px;
-        }
         .section-5__top-txt-title{
             color: var(--White, #FFF);
             font-family: Work Sans;
@@ -1361,9 +1584,6 @@ line-height: 140%; /* 22.4px */
     }
 
     @media (max-width: 621px){
-        .section-5__box-block:nth-child(2){
-            display: none;
-        }
         .section-5__box-block{
             margin: 0 auto;
             width: 320px;
@@ -1611,6 +1831,13 @@ text-transform: capitalize;
             left: 23%;
             top: 32%;
         }
+
+        .section-6{
+            display: none;
+        }
+        .section-6-mob{
+            display: block;
+        }
     }
 
     @media (max-width: 490px) {
@@ -1683,6 +1910,19 @@ text-transform: capitalize;
             font-style: normal;
             font-weight: 600;
             line-height: 140%; /* 22.4px */
+        }
+    }
+
+    @media (max-width: 410px){
+        .section-7__top{
+            padding-left: 20px;
+            border: 1px solid #000;
+        }
+        .section-7__box{
+            padding: 0px;
+            padding-left: 7px;
+            max-width: 320px;
+            border: 1px solid #000;
         }
     }
 
